@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  MusicBrowser
 //
-//  Created by Liangzan Chen on 7/31/18.
+//  Created by Jack Chen on 8/1/18.
 //  Copyright © 2018 Jack Chen. All rights reserved.
 //
 
@@ -12,11 +12,6 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (readonly, strong) NSPersistentContainer *persistentContainer;
-
-- (void)saveContext;
-
 
 @end
 

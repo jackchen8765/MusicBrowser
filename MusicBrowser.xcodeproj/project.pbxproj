@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98BF6313BC2A6D07174BAF62 /* libPods-MusicBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E2FAF65938F2D8375A1162 /* libPods-MusicBrowser.a */; };
+		B419EE94211664E10045C588 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EE93211664E10045C588 /* WebViewController.m */; };
+		B419EE962116832D0045C588 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B419EE952116832C0045C588 /* WebKit.framework */; };
+		B419EE992116A8890045C588 /* LRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EE982116A8890045C588 /* LRUCache.m */; };
+		B419EEA02116A9280045C588 /* CachePayLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EE9C2116A9270045C588 /* CachePayLoad.m */; };
+		B419EEA12116A9280045C588 /* DLList.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EE9E2116A9270045C588 /* DLList.m */; };
+		B419EEA22116A9280045C588 /* DLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EE9F2116A9270045C588 /* DLNode.m */; };
+		B419EEA52116B8670045C588 /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B419EEA42116B8670045C588 /* TrackCell.m */; };
+		B41CB845211169EA00D3CEC2 /* SearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = B41CB844211169EA00D3CEC2 /* SearchService.m */; };
+		B4429A6F2114029A00522E7C /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = B4429A6E2114029A00522E7C /* Track.m */; };
 		B4518A6D2111288300FC9CCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A6C2111288300FC9CCB /* AppDelegate.m */; };
-		B4518A702111288300FC9CCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A6F2111288300FC9CCB /* ViewController.m */; };
+		B4518A702111288300FC9CCB /* MusicSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A6F2111288300FC9CCB /* MusicSearchViewController.m */; };
 		B4518A732111288300FC9CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4518A712111288300FC9CCB /* Main.storyboard */; };
-		B4518A762111288300FC9CCB /* MusicBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4518A742111288300FC9CCB /* MusicBrowser.xcdatamodeld */; };
 		B4518A782111288300FC9CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4518A772111288300FC9CCB /* Assets.xcassets */; };
 		B4518A7B2111288300FC9CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4518A792111288300FC9CCB /* LaunchScreen.storyboard */; };
 		B4518A7E2111288300FC9CCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A7D2111288300FC9CCB /* main.m */; };
-		B4518A882111288300FC9CCB /* MusicBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A872111288300FC9CCB /* MusicBrowserTests.m */; };
 		B4518A932111288300FC9CCB /* MusicBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4518A922111288300FC9CCB /* MusicBrowserUITests.m */; };
+		B45C3E232114D499007E13BD /* TrackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C3E222114D499007E13BD /* TrackDetailViewController.m */; };
+		B4B5D5132117C83C00C46491 /* LRUCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D5122117C83C00C46491 /* LRUCacheTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,23 +46,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46F30511B94B95359A712197 /* Pods-MusicBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicBrowser/Pods-MusicBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		69608D65D302142E8CE7EC8F /* Pods-MusicBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicBrowser/Pods-MusicBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		B419EE92211664E10045C588 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		B419EE93211664E10045C588 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		B419EE952116832C0045C588 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B419EE972116A8890045C588 /* LRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
+		B419EE982116A8890045C588 /* LRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUCache.m; sourceTree = "<group>"; };
+		B419EE9A2116A9260045C588 /* DLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNode.h; sourceTree = "<group>"; };
+		B419EE9B2116A9260045C588 /* CachePayLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachePayLoad.h; sourceTree = "<group>"; };
+		B419EE9C2116A9270045C588 /* CachePayLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachePayLoad.m; sourceTree = "<group>"; };
+		B419EE9D2116A9270045C588 /* DLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLList.h; sourceTree = "<group>"; };
+		B419EE9E2116A9270045C588 /* DLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLList.m; sourceTree = "<group>"; };
+		B419EE9F2116A9270045C588 /* DLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNode.m; sourceTree = "<group>"; };
+		B419EEA32116B8670045C588 /* TrackCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackCell.h; sourceTree = "<group>"; };
+		B419EEA42116B8670045C588 /* TrackCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
+		B41CB843211169EA00D3CEC2 /* SearchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchService.h; sourceTree = "<group>"; };
+		B41CB844211169EA00D3CEC2 /* SearchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchService.m; sourceTree = "<group>"; };
+		B4429A6D2114029A00522E7C /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		B4429A6E2114029A00522E7C /* Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		B4518A682111288300FC9CCB /* MusicBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4518A6B2111288300FC9CCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4518A6C2111288300FC9CCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4518A6E2111288300FC9CCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4518A6F2111288300FC9CCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4518A6E2111288300FC9CCB /* MusicSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicSearchViewController.h; sourceTree = "<group>"; };
+		B4518A6F2111288300FC9CCB /* MusicSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicSearchViewController.m; sourceTree = "<group>"; };
 		B4518A722111288300FC9CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B4518A752111288300FC9CCB /* MusicBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicBrowser.xcdatamodel; sourceTree = "<group>"; };
 		B4518A772111288300FC9CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4518A7A2111288300FC9CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4518A7C2111288300FC9CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4518A7D2111288300FC9CCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4518A832111288300FC9CCB /* MusicBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4518A872111288300FC9CCB /* MusicBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicBrowserTests.m; sourceTree = "<group>"; };
 		B4518A892111288300FC9CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4518A8E2111288300FC9CCB /* MusicBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4518A922111288300FC9CCB /* MusicBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicBrowserUITests.m; sourceTree = "<group>"; };
 		B4518A942111288300FC9CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45C3E212114D499007E13BD /* TrackDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackDetailViewController.h; sourceTree = "<group>"; };
+		B45C3E222114D499007E13BD /* TrackDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackDetailViewController.m; sourceTree = "<group>"; };
+		B4B5D5122117C83C00C46491 /* LRUCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRUCacheTests.m; sourceTree = "<group>"; };
+		D1E2FAF65938F2D8375A1162 /* libPods-MusicBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B419EE962116832D0045C588 /* WebKit.framework in Frameworks */,
+				98BF6313BC2A6D07174BAF62 /* libPods-MusicBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1982111C19828CB0371B6412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B419EE952116832C0045C588 /* WebKit.framework */,
+				D1E2FAF65938F2D8375A1162 /* libPods-MusicBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41CB8422111653E00D3CEC2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B41CB843211169EA00D3CEC2 /* SearchService.h */,
+				B41CB844211169EA00D3CEC2 /* SearchService.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B4518A5F2111288300FC9CCB = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +138,8 @@
 				B4518A862111288300FC9CCB /* MusicBrowserTests */,
 				B4518A912111288300FC9CCB /* MusicBrowserUITests */,
 				B4518A692111288300FC9CCB /* Products */,
+				FD42E2A88370DDBDDC6B7306 /* Pods */,
+				1982111C19828CB0371B6412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +156,17 @@
 		B4518A6A2111288300FC9CCB /* MusicBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				B41CB8422111653E00D3CEC2 /* Networking */,
+				B4518AA221112CD800FC9CCB /* Models */,
+				B4518AA121112CC500FC9CCB /* Views */,
+				B4518AA021112C7B00FC9CCB /* Controllers */,
 				B4518A6B2111288300FC9CCB /* AppDelegate.h */,
 				B4518A6C2111288300FC9CCB /* AppDelegate.m */,
-				B4518A6E2111288300FC9CCB /* ViewController.h */,
-				B4518A6F2111288300FC9CCB /* ViewController.m */,
 				B4518A712111288300FC9CCB /* Main.storyboard */,
 				B4518A772111288300FC9CCB /* Assets.xcassets */,
 				B4518A792111288300FC9CCB /* LaunchScreen.storyboard */,
 				B4518A7C2111288300FC9CCB /* Info.plist */,
 				B4518A7D2111288300FC9CCB /* main.m */,
-				B4518A742111288300FC9CCB /* MusicBrowser.xcdatamodeld */,
 			);
 			path = MusicBrowser;
 			sourceTree = "<group>";
@@ -120,8 +174,8 @@
 		B4518A862111288300FC9CCB /* MusicBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4518A872111288300FC9CCB /* MusicBrowserTests.m */,
 				B4518A892111288300FC9CCB /* Info.plist */,
+				B4B5D5122117C83C00C46491 /* LRUCacheTests.m */,
 			);
 			path = MusicBrowserTests;
 			sourceTree = "<group>";
@@ -135,6 +189,54 @@
 			path = MusicBrowserUITests;
 			sourceTree = "<group>";
 		};
+		B4518AA021112C7B00FC9CCB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4518A6E2111288300FC9CCB /* MusicSearchViewController.h */,
+				B4518A6F2111288300FC9CCB /* MusicSearchViewController.m */,
+				B45C3E212114D499007E13BD /* TrackDetailViewController.h */,
+				B45C3E222114D499007E13BD /* TrackDetailViewController.m */,
+				B419EE92211664E10045C588 /* WebViewController.h */,
+				B419EE93211664E10045C588 /* WebViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B4518AA121112CC500FC9CCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B419EEA32116B8670045C588 /* TrackCell.h */,
+				B419EEA42116B8670045C588 /* TrackCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4518AA221112CD800FC9CCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B419EE9B2116A9260045C588 /* CachePayLoad.h */,
+				B419EE9C2116A9270045C588 /* CachePayLoad.m */,
+				B419EE9D2116A9270045C588 /* DLList.h */,
+				B419EE9E2116A9270045C588 /* DLList.m */,
+				B419EE9A2116A9260045C588 /* DLNode.h */,
+				B419EE9F2116A9270045C588 /* DLNode.m */,
+				B419EE972116A8890045C588 /* LRUCache.h */,
+				B419EE982116A8890045C588 /* LRUCache.m */,
+				B4429A6D2114029A00522E7C /* Track.h */,
+				B4429A6E2114029A00522E7C /* Track.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD42E2A88370DDBDDC6B7306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69608D65D302142E8CE7EC8F /* Pods-MusicBrowser.debug.xcconfig */,
+				46F30511B94B95359A712197 /* Pods-MusicBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4518A972111288300FC9CCB /* Build configuration list for PBXNativeTarget "MusicBrowser" */;
 			buildPhases = (
+				26F520DBD729771D1A1C6690 /* [CP] Check Pods Manifest.lock */,
 				B4518A642111288300FC9CCB /* Sources */,
 				B4518A652111288300FC9CCB /* Frameworks */,
 				B4518A662111288300FC9CCB /* Resources */,
+				57776C74F0CF6307C4F1CC19 /* [CP] Embed Pods Frameworks */,
+				072A97ED0D2D918996788F5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,15 +368,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		072A97ED0D2D918996788F5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicBrowser/Pods-MusicBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26F520DBD729771D1A1C6690 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57776C74F0CF6307C4F1CC19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicBrowser/Pods-MusicBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4518A642111288300FC9CCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4518A702111288300FC9CCB /* ViewController.m in Sources */,
+				B4518A702111288300FC9CCB /* MusicSearchViewController.m in Sources */,
+				B419EEA52116B8670045C588 /* TrackCell.m in Sources */,
+				B419EEA22116A9280045C588 /* DLNode.m in Sources */,
+				B419EEA02116A9280045C588 /* CachePayLoad.m in Sources */,
 				B4518A6D2111288300FC9CCB /* AppDelegate.m in Sources */,
+				B45C3E232114D499007E13BD /* TrackDetailViewController.m in Sources */,
+				B419EE94211664E10045C588 /* WebViewController.m in Sources */,
+				B41CB845211169EA00D3CEC2 /* SearchService.m in Sources */,
+				B4429A6F2114029A00522E7C /* Track.m in Sources */,
 				B4518A7E2111288300FC9CCB /* main.m in Sources */,
-				B4518A762111288300FC9CCB /* MusicBrowser.xcdatamodeld in Sources */,
+				B419EE992116A8890045C588 /* LRUCache.m in Sources */,
+				B419EEA12116A9280045C588 /* DLList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4518A882111288300FC9CCB /* MusicBrowserTests.m in Sources */,
+				B4B5D5132117C83C00C46491 /* LRUCacheTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +596,7 @@
 		};
 		B4518A982111288300FC9CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69608D65D302142E8CE7EC8F /* Pods-MusicBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +610,7 @@
 		};
 		B4518A992111288300FC9CCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F30511B94B95359A712197 /* Pods-MusicBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,19 +716,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B4518A742111288300FC9CCB /* MusicBrowser.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B4518A752111288300FC9CCB /* MusicBrowser.xcdatamodel */,
-			);
-			currentVersion = B4518A752111288300FC9CCB /* MusicBrowser.xcdatamodel */;
-			path = MusicBrowser.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B4518A602111288300FC9CCB /* Project object */;
 }
