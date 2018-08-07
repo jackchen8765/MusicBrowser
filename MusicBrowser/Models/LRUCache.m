@@ -1,6 +1,6 @@
 //
 //  LRUCache.m
-//  AlgorithmObjC
+//  MusicBrowser
 //
 //  Created by Jack Chen on 8/1/18.
 //  Copyright © 2018 Jack Chen. All rights reserved.
@@ -55,16 +55,19 @@
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    NSMutableArray<DLNode *> * savedNodes = [NSMutableArray arrayWithCapacity:self.list.count];
-    
-    [aCoder encodeInteger:_capacity forKey:@"CacheCapacity"];
-    
-    DLNode * curr = _list.head;
-    while (curr != nil) {
-        [savedNodes addObject:curr];
-        curr = curr.next;
+    @synchronized(self) {
+        NSMutableArray<DLNode *> * savedNodes = [NSMutableArray arrayWithCapacity:self.list.count];
+        
+        [aCoder encodeInteger: self.capacity forKey:@"CacheCapacity"];
+        
+        DLNode * curr = self.list.head;
+        while (curr != nil) {
+            [savedNodes addObject:curr];
+            curr = curr.next;
+        }
+        [aCoder encodeObject:savedNodes forKey:@"CachedNodesArray"];
     }
-    [aCoder encodeObject:savedNodes forKey:@"CachedNodesArray"];
+    
 }
 
 -(void)setValue:(id)value forKey:(id)key {
@@ -72,46 +75,57 @@
         return;
     }
     
-    DLNode * node = self.dict[key];
-    if (node == nil) {
-        CachePayload * payload = [[CachePayload alloc] initWithValue:value andKey:key];
-        node = [self.list addToHead:payload];
-        self.dict[key] = node;
-        
-        if (self.list.count > self.capacity) {
-            node = [self.list removeLastNode];
-            payload = node.value;
-            [self.dict removeObjectForKey:payload.key];
+    @synchronized(self)  {
+        DLNode * node = self.dict[key];
+        if (node == nil) {
+            CachePayload * payload = [[CachePayload alloc] initWithValue:value andKey:key];
+            node = [self.list addToHead:payload];
+            self.dict[key] = node;
+            
+            if (self.list.count > self.capacity) {
+                node = [self.list removeLastNode];
+                payload = node.value;
+                [self.dict removeObjectForKey:payload.key];
+            }
+        }
+        else {
+            [self.list moveToHead: node];
         }
     }
-    else {
-        [self.list moveToHead: node];
-    }
+    
 }
 
 -(id)valueForKey:(id)key {
     if(key == nil) return nil;
     
-    DLNode * node = self.dict[key];
-    if (node != nil) {
-        CachePayload * payload = node.value;
-        [self.list moveToHead:node];
-        return payload.value;
+    @synchronized(self){
+        DLNode * node = self.dict[key];
+        if (node != nil) {
+            CachePayload * payload = node.value;
+            [self.list moveToHead:node];
+            return payload.value;
+        }
+        return nil;
     }
-    return nil;
+   
 }
 
 -(CachePayload *)mostRecentPayload {
-    DLNode * head = self.list.head;
-    return head != nil ? head.value : nil;
+    @synchronized(self){
+        DLNode * head = self.list.head;
+        return head != nil ? head.value : nil;
+    }
 }
 - (NSArray<CachePayload *> *) allPayloads{
-    NSMutableArray<CachePayload *> * payloads = [NSMutableArray arrayWithCapacity:self.list.count];
-    DLNode * curr = self.list.head;
-    while (curr != nil) {
-        [payloads addObject:curr.value];
+    @synchronized(self) {
+        NSMutableArray<CachePayload *> * payloads = [NSMutableArray arrayWithCapacity:self.list.count];
+        DLNode * curr = self.list.head;
+        while (curr != nil) {
+            [payloads addObject:curr.value];
+        }
+        return payloads;
     }
-    return payloads;
+    
 }
 
 @end

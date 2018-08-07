@@ -1,6 +1,6 @@
 //
 //  LRUCache.h
-//  AlgorithmObjC
+//  MusicBrowser
 //
 //  Created by Jack Chen on 8/1/18.
 //  Copyright © 2018 Jack Chen. All rights reserved.

@@ -79,12 +79,15 @@
                 self.tracks = tracks;
                 [self.tableView reloadData];
                 
-                //svae the result to the LRUCache
-                [self.recentSearchResult setValue:tracks forKey: trimmedTerm];
-                
-                
-                //trigger the change event for the KVO of "searchTerm"
-                self.searchTerm  = trimmedTerm;
+                //update the cache in a secondary thread
+                dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    //svae the result to the LRUCache
+                    [self.recentSearchResult setValue:tracks forKey: trimmedTerm];
+                    
+                    
+                    //trigger the change event for the KVO of "searchTerm"
+                    self.searchTerm  = trimmedTerm;
+                });
             }
             [UIApplication.sharedApplication setNetworkActivityIndicatorVisible:NO];
         }];
